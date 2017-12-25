@@ -1,4 +1,9 @@
-## Welcome to GitHub Pages
+# Sotiris Ntouskas
+
+### I'm a PhD Candidate in NTU Athens on the field of Model Predictive Control. 
+Some of my academic interests are Model predictive control, optimization, embedded systems, robotics etc. I'm currently working on the space industry for a [greek company](https://www.teletel.eu), as a Software Engineer. More on [about me](#bio).
+
+## About Me<a name="bio"></a>
 
 You can use the [editor on GitHub](https://github.com/sotdousk/sotdousk.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
