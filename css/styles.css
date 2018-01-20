@@ -1,0 +1,112 @@
+
+section {
+    display: block;
+}
+
+.mybanner {
+    background-image: url("../images/circuit1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align: center;
+    height: 600px;
+    width: 100%;
+}
+
+a:link {
+    color: white;
+}
+
+.banner_text {
+    align: center;
+    width: 700px;
+}
+
+#menu-outer {
+	height: 0px;
+	align: center;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+	align: center;
+}
+
+ul#horizontal-list li {
+    display: inline;
+    padding-right: 100px;
+    min-width: 696px;
+	list-style: none;
+	height: 15px;
+}
+
+
+.my_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align: center;
+}
+
+a.basicLink {
+    font-weight: bold;
+    font-size: 90%;;
+    color: #3ADF00;
+    align: center;
+}
+
+a.basicLink:visited {
+    color: #3ADF00;
+}
+
+dt {
+    font-weight: bold;
+}
+dd {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+.site-header {
+    height: 5px;
+}
+
+h1.name {
+    padding:50px 30px 50px 30px;
+    text-align:center;
+    font-weight: bold;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: bold;
+    color: #703A09;
+    text-align: center;
+    display: inline-block
+}
+h3.short_desc {
+    display: inline-block;
+    width: 600px;
+    text-align: center;
+    display: table;
+    padding:50px 5px 15px 20px;
+}
+.site-footer {
+    background-image: url("../images/footer_img.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align: center;
+    height: 650px;
+    width: 100%;
+}
+
+p {text-align:center;}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: #828282;
+    margin-left: -15px;
+    width: 850px;
+}
+
+
