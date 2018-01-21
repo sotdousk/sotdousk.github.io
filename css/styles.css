@@ -79,15 +79,6 @@ h2 {
     display: inline-block
 }
 
-.site-footer {
-    background-image: url("../images/footer_img.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    align: center;
-    height: 650px;
-    width: 100%;
-}
-
 p {text-align:center;}
 
 .site-header {
@@ -119,16 +110,17 @@ h3.short_desc {
 }
 @media screen and (max-width: 800px) {
     .mybanner {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
-      max-height: -webkit-calc(800px - (30px));
-      max-height: calc(800px - (30px));
+      max-width: -webkit-calc(712px - (30px));
+      max-width: calc(712px - (30px));
+      max-height: -webkit-calc(900px - (30px));
+      max-height: calc(900px - (30px));
       padding-right: 15px;
       padding-left: 15px; }
 
     .h3.short_desc {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
+      max-width: -webkit-calc(1400px - (30px));
+      max-width: calc(1400px - (30px));
+      font-size: 10px;
       padding-right: 15px;
       padding-left: 15px; }
 
