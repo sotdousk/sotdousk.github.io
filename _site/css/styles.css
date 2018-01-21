@@ -3,22 +3,8 @@ section {
     display: block;
 }
 
-.mybanner {
-    background-image: url("../images/circuit1.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    align: center;
-    height: 600px;
-    width: 100%;
-}
-
 a:link {
     color: white;
-}
-
-.banner_text {
-    align: center;
-    width: 700px;
 }
 
 #menu-outer {
@@ -47,16 +33,24 @@ ul#horizontal-list li {
     margin-right: auto;
     align: center;
 }
+@media screen and (max-width: 800px) {
+    .my_img {
+      max-width: -webkit-calc(800px - (30px));
+      max-width: calc(800px - (30px));
+      max-height: -webkit-calc(500px - (30px));
+      max-height: calc(500px - (30px));
+
+}
 
 a.basicLink {
     font-weight: bold;
     font-size: 90%;;
-    color: #3ADF00;
+    color: #00cc00;
     align: center;
 }
 
 a.basicLink:visited {
-    color: #3ADF00;
+    color: #00cc00;
 }
 
 dt {
@@ -84,29 +78,50 @@ h2 {
     text-align: center;
     display: inline-block
 }
+
+p {text-align:center;}
+
+.site-header {
+    padding-top: 10px;
+    height: 10px;
+    background-color: #2E2E2E;
+}
+.banner_text {
+    align: center;
+    width: 700px;
+    height: 400px;
+}
+
 h3.short_desc {
     display: inline-block;
     width: 600px;
     text-align: center;
     display: table;
-    padding:50px 5px 15px 20px;
+    padding: 50px 5px 15px 20px;
+
 }
-.site-footer {
-    background-image: url("../images/footer_img.jpg");
+.mybanner {
+    background-image: url("../images/circuit1.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     align: center;
-    height: 650px;
+    height: 550px;
     width: 100%;
 }
+@media screen and (max-width: 800px) {
+    .mybanner {
+      max-width: -webkit-calc(712px - (30px));
+      max-width: calc(712px - (30px));
+      max-height: -webkit-calc(900px - (30px));
+      max-height: calc(900px - (30px));
+      padding-right: 15px;
+      padding-left: 15px; }
 
-p {text-align:center;}
+    .h3.short_desc {
+      max-width: -webkit-calc(1400px - (30px));
+      max-width: calc(1400px - (30px));
+      font-size: 10px;
+      padding-right: 15px;
+      padding-left: 15px; }
 
-.footer-col-wrapper {
-    font-size: 15px;
-    color: #828282;
-    margin-left: -15px;
-    width: 850px;
 }
-
-

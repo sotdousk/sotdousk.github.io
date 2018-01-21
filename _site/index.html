@@ -17,10 +17,63 @@
 
   <style type="text/css">
     .site-header {
-    padding-top: 10px;
-    height: 10px;
-    background-color: #2E2E2E;
-}
+        padding-top: 10px;
+        height: 10px;
+        background-color: #2E2E2E;
+        min-height: 55.95px;
+        position: relative;
+    }
+    .banner_text {
+        padding-top: 40px;
+        align: center;
+        width: 700px;
+        height: 400px;
+    }
+
+    h3.short_desc {
+        display: inline-block;
+        width: 600px;
+        text-align: center;
+        display: table;
+        padding: 50px 5px 15px 20px;
+
+    }
+    .mybanner {
+        background-image: url("../images/circuit1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        align: center;
+        height: 600px;
+
+    }
+    a.basicLink {
+        font-weight: bold;
+        font-size: 90%;;
+        color: #00cc00;
+        align: center;
+    }
+
+    a.basicLink:visited {
+        color: #00cc00;
+    }
+
+    h2 {
+        font-style: italic;
+        font-weight: bold;
+        color: #703A09;
+        text-align: center;
+        display: inline-block
+    }
+
+    .site-footer {
+        background-image: url("../images/footer_img.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        align: center;
+        height: 650px;
+        width: 100%;
+    }
+
   </style>
 </head>
 
@@ -29,7 +82,7 @@
   <body>
 
     <header class="site-header" id="Home" role="banner">
-        <div class="table" align="center" style="width: 1000px; padding-left: 150px">
+        <nav class="site-nav" id="nav" align="center" style="width: 1000px; padding-left: 150px">
                 <ul id="horizontal-list">
                     <li><a class="basicLink" href="#Home"><font color="#FE642E">Home</font></a></li>
                     <li><a class="basicLink" href="#About">About</a></li>
@@ -37,22 +90,8 @@
                     <li><a class="basicLink" href="#Publications">Publications</a></li>
                     <li><a class="basicLink" href="#Professional">Professional</a></li>
                 </ul>
+        </nav>
     </header>
-
-    <nav>
-        <!--&lt;!&ndash;&lt;!&ndash;<a class="site-title" href="/">Sotiris Ntouskas Personal Blog</a>&ndash;&gt;&ndash;&gt;-->
-        <!--&lt;!&ndash;<div id="menu-outer" align="center">&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="table" align="center" style="width: 1000px; padding-left: 150px">&ndash;&gt;-->
-                <!--&lt;!&ndash;<ul id="horizontal-list">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<li><a class="basicLink" href="#Home"><font color="#FE642E">Home</font></a></li>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<li><a class="basicLink" href="#About">About</a></li>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<li><a class="basicLink" href="#News">News</a></li>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<li><a class="basicLink" href="#Publications">Publications</a></li>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<li><a class="basicLink" href="#Professional">Professional</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;</ul>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--</div>-->
-    </nav>
 
      <div class="mybanner" id="mybanner" align="center">
 
@@ -206,7 +245,7 @@
                         <ul class="contact-list" style="padding-top: 30px;">
                             <li style="padding-bottom: 30px;">
                                 <a href="https://www.linkedin.com/in/sotiris-ntouskas-a2429967">
-                                <i class="fa fa-linkedin-square" style="font-size:24px"></i>Linkedin Profile</a>
+                                <i class="fa fa-linkedin-square" style="font-size:24px"></i> Linkedin Profile</a>
                             </li>
                             <li style="padding-top: 50px;">
                                 <font color="#2E64FE">Mail address <i class="fa fa-envelope"></i></font></li>
@@ -227,7 +266,7 @@
                 <div class="footer-col footer-col-3">
                     <p>This is my first attempt to create a public personal website. I hope that it will
                     get better and better as time passes by. I try to keep it updated and continuously enriched.
-                    I also try to embed more functionality so don't be very rigorous (at least at the beginning).
+                    I will also try to embed more functionality so don't be very rigorous (at least at the beginning).
                         Stay tuned for updates...
                     </p>
                 </div>
