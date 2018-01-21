@@ -94,7 +94,6 @@ p {text-align:center;}
 
 h3.short_desc {
     display: inline-block;
-    width: 600px;
     text-align: center;
     display: table;
     padding: 50px 5px 15px 20px;
@@ -110,18 +109,38 @@ h3.short_desc {
 }
 @media screen and (max-width: 800px) {
     .mybanner {
-      max-width: -webkit-calc(712px - (30px));
-      max-width: calc(712px - (30px));
-      max-height: -webkit-calc(900px - (30px));
-      max-height: calc(900px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; }
+          max-width: -webkit-calc(504px - (30px));
+          max-width: calc(504px - (30px));
+          max-height: -webkit-calc(900px - (30px));
+          max-height: calc(900px - (30px));
+          padding-right: 15px;
+          padding-left: 15px; }
 
-    .h3.short_desc {
-      max-width: -webkit-calc(1400px - (30px));
-      max-width: calc(1400px - (30px));
-      font-size: 10px;
-      padding-right: 15px;
-      padding-left: 15px; }
+    .banner_text {
+          max-width: -webkit-calc(480px - (30px));
+          max-width: calc(480px - (30px));
+          max-height: -webkit-calc(900px - (30px));
+          max-height: calc(900px - (30px));
+          padding-right: 15px;
+          padding-left: 15px; }
+    }
+
+    .h1.name {
+        max-width: -webkit-calc(50px - (30px));
+        max-width: calc(50px - (30px));
+        align-text: center;
+        max-height: -webkit-calc(900px - (30px));
+        max-height: calc(900px - (30px));
+        padding-right: 50px;
+        }
+    }
+
+    .h3.short-desc {
+        max-width: -webkit-calc(50px - (30px));
+        max-width: calc(50px - (30px));
+        align-text: center;
+        padding: 50px 10px 15px 10px;
+        size: 30px;
+    }
 
 }
