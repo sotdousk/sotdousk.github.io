@@ -1,146 +1,132 @@
+@charset "UTF-8";
+/* selector - by the way this is how to do comments in CSS */
 
-section {
-    display: block;
+* {
+	margin:0;
+	line-height:16px;
+	box-sizing: border-box;
 }
 
-a:link {
-    color: white;
-}
-
-#menu-outer {
-	height: 0px;
-	align: center;
-}
-
-.table {
-	display: table;   /* Allow the centering to work */
-	margin: 0 auto;
-	align: center;
-}
-
-ul#horizontal-list li {
-    display: inline;
-    padding-right: 100px;
-    min-width: 696px;
-	list-style: none;
-	height: 15px;
-}
-
-
-.my_img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align: center;
-}
-@media screen and (max-width: 800px) {
-    .my_img {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
-      max-height: -webkit-calc(500px - (30px));
-      max-height: calc(500px - (30px));
-
-}
-
-a.basicLink {
-    font-weight: bold;
-    font-size: 90%;;
-    color: #00cc00;
-    align: center;
-}
-
-a.basicLink:visited {
-    color: #00cc00;
-}
-
-dt {
-    font-weight: bold;
-}
-dd {
-    margin: 0;
-    padding: 0 0 0 20px;
-}
-
-.site-header {
-    height: 5px;
-}
-
-h1.name {
-    padding:50px 30px 50px 30px;
-    text-align:center;
-    font-weight: bold;
+body {
+	width: 100%;
+	Height: 100%;
+	background-color: Beige;
 }
 
 h2 {
-    font-style: italic;
-    font-weight: bold;
-    color: #703A09;
-    text-align: center;
-    display: inline-block
+	color: #B45F04;
+	padding-left: 25%;
+	padding-top: 50px;
+	padding-bottom: 20px;
 }
 
-p {text-align:center;}
-
-.site-header {
-    padding-top: 10px;
-    height: 10px;
-    background-color: #2E2E2E;
+#Home {
+	align: center;
+	width: auto;
+	height: 75%;
+	padding-bottom: 10%;
+	background-image: url(../images/circuit1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
 }
-.banner_text {
-    align: center;
-    width: 700px;
-    height: 400px;
+
+#short_me {
+	padding-top: 3%;
 }
 
-h3.short_desc {
-    display: inline-block;
-    text-align: center;
-    display: table;
-    padding: 50px 5px 15px 20px;
-
+#Contact {
+	align: center;
+	width: auto;
+	height: 700px;
+	background-image: url(../images/footer_img.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: 100% 100%;
 }
-.mybanner {
-    background-image: url("../images/circuit1.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    align: center;
-    height: 550px;
-    width: 100%;
-}
-@media screen and (max-width: 800px) {
-    .mybanner {
-          max-width: -webkit-calc(504px - (30px));
-          max-width: calc(504px - (30px));
-          max-height: -webkit-calc(900px - (30px));
-          max-height: calc(900px - (30px));
-          padding-right: 15px;
-          padding-left: 15px; }
 
-    .banner_text {
-          max-width: -webkit-calc(480px - (30px));
-          max-width: calc(480px - (30px));
-          max-height: -webkit-calc(900px - (30px));
-          max-height: calc(900px - (30px));
-          padding-right: 15px;
-          padding-left: 15px; }
+#main {
+	padding-top: 30px;
+	padding-bottom: 10px;
+	width: 100%;
+	align:center;
+}
+
+#main h1 {
+	font-size: 32px;
+	color: #3ADF00;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#main h3 {
+	font:italic bold 15px/30px Georgia, serif;
+	position: relative;
+	color: white;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-top: 1%;
+}
+
+.centering_p {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.my_img {
+	 width: 150px;
+	 height: 150px;
+}
+
+.text_set {
+	font: italic bold 15px/30px Georgia, serif;
+	position: relative;
+	color: #585858;
+	padding-right: 25%;
+	padding-left: 25%;
+	padding-top: 1%;
+	padding-bottom: 5%;
+}
+
+.pubs_set {
+	font: italic bold 15px/30px Georgia, serif;
+	position: relative;
+	color: #585858;
+	padding-right: 25%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+
+
+/* If the browser window is smaller than 600px, make the columns stack on top of each other */
+@media only screen and (max-width: 600px) {
+    .footer {
+    		float: right;
+        display: block;
+        width: 100%;
     }
 
-    .h1.name {
-        max-width: -webkit-calc(50px - (30px));
-        max-width: calc(50px - (30px));
-        align-text: center;
-        max-height: -webkit-calc(900px - (30px));
-        max-height: calc(900px - (30px));
-        padding-right: 50px;
-        }
-    }
+}
 
-    .h3.short-desc {
-        max-width: -webkit-calc(50px - (30px));
-        max-width: calc(50px - (30px));
-        align-text: center;
-        padding: 50px 10px 15px 10px;
-        size: 30px;
-    }
+.footer-col2 {
+	padding-top: 35%;
 
+}
+
+.contact-list {
+	font: italic bold 15px/30px Georgia, serif;
+	color: #40FF00;
+	padding-right: 20%;
+	float: right;
+	padding-top: 3%;
+	padding-bottom: 5%;
+
+}
+
+.contact-el {
+	padding-bottom: 10%;
 }
