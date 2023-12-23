@@ -84,6 +84,7 @@ h2 {
 
 .text_set {
 	font: italic bold 15px/30px Georgia, serif;
+	text-align: justify;
 	position: relative;
 	color: #585858;
 	padding-right: 25%;
