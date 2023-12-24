@@ -36,6 +36,7 @@ plugins:
 
 future: true
 timezone: Europe/Athens
+disable_disk_cache: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
