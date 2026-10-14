@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* selector - by the way this is how to do comments in CSS */
 
+html {
+    scroll-behavior: auto;
+}
+
 * {
 	margin:0;
 	line-height:16px;
@@ -34,6 +38,46 @@ body {
     font-weight: 600;
 
     color: #B45F04;
+}
+
+/* Navigation */
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background-color: rgba(30, 30, 30, 0.96);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.site-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-nav a {
+    display: block;
+    padding: 11px 18px;
+
+    color: #eeeeee;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: color 0.2s ease,
+                background-color 0.2s ease;
+}
+
+.site-nav a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
 .about-content {
@@ -426,8 +470,30 @@ body {
     border-radius: 4px;
 }
 
+.project-visual-thermal {
+    background-color: #f7f7f7;
+}
+
 /* If the browser window is smaller than 600px, make the columns stack on top of each other */
 @media only screen and (max-width: 600px) {
+    .site-nav-container {
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 0 8px;
+        scrollbar-width: none;
+    }
+
+    .site-nav a {
+        flex: 0 0 auto;
+        padding: 10px 11px;
+        font-size: 0.82rem;
+    }
+
+    .site-nav-container::-webkit-scrollbar {
+        display: none;
+    }
+
     .footer {
     		float: right;
         display: block;
@@ -467,10 +533,10 @@ body {
     .project-content {
         padding: 28px 24px;
     }
-}
 
-.project-visual-thermal {
-    background-color: #f7f7f7;
+    .project-visual-thermal {
+        background-color: #f7f7f7;
+    }
 }
 
 #Contact {
