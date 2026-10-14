@@ -304,6 +304,14 @@ body {
     overflow: hidden;
 }
 
+.project-card-reverse .project-visual {
+    order: 2;
+}
+
+.project-card-reverse .project-content {
+    order: 1;
+}
+
 .project-visual {
     display: flex;
     align-items: center;
@@ -373,7 +381,7 @@ body {
 .project-link {
     display: inline-block;
 
-    margin-top: 22px;
+    margin-top: 0;
     padding: 9px 14px;
 
     color: #333;
@@ -388,7 +396,6 @@ body {
                 border-color 0.2s ease;
 }
 
-
 .project-link i {
     margin-right: 7px;
 }
@@ -396,6 +403,13 @@ body {
 .project-link:hover {
     background-color: rgba(0, 0, 0, 0.06);
     border-color: #333;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
 }
 
 
@@ -433,17 +447,30 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .project-card-reverse .project-visual {
+        order: 1;
+    }
+
+    .project-card-reverse .project-content {
+        order: 2;
+    }
+
     .project-visual {
-        min-height: 260px;
+        min-height: 0px;
     }
 
     .project-visual img {
-        height: 260px;
+        width: 100%;
+        height: auto;
     }
 
     .project-content {
         padding: 28px 24px;
     }
+}
+
+.project-visual-thermal {
+    background-color: #f7f7f7;
 }
 
 #Contact {
